@@ -2,7 +2,7 @@
 <html lang="es">
 <?php
 $title = "Diseño de servicios";
-$descripcion = "";
+$descripcion = "Vinculación del diseño gráfico con el diseño de servicios y el interiorismo.";
 ?>
 <head>
 <meta charset="utf-8">
@@ -27,17 +27,14 @@ $descripcion = "";
 <div class="masthead clearfix">
 <div class="inner">
 <h1 class="masthead-brand"><?php echo($title);?></h1>
+<h4 class="masthead-brand"><?php echo($descripcion);?></h4>
 <nav>
 <ul class="nav masthead-nav">
 <li<?php if((basename($_SERVER['PHP_SELF']))=='index.php'){?> class="active" <?php };?>><a href="index.php">Portada</a></li>
+<li<?php if((basename($_SERVER['PHP_SELF']))=='amigo.php'){?> class="active" <?php };?>><a href="amigo.php">Relacionado</a></li>
 <li<?php if((basename($_SERVER['PHP_SELF']))=='about.php'){?> class="active" <?php };?>><a href="about.php">Sobre el proyecto</a></li>
 </ul>
 </nav>
 </div>
 </div>
-<?php if((basename($_SERVER['PHP_SELF']))=='index.php'){?>
-  <h2><?php echo($descripcion_index);?></h2>
-<?php }else{ ?>
-  <h2><?php echo($descripcion_estudiantes);?></h2>
-<?php };?>
 </header>
