@@ -12,12 +12,12 @@ array_shift($csv);
 for($a = 0; $a < $total = count($csv); $a++){?>
   <article class="row">
     <hr>
-    <div class="col-xs-5 col-sm-3 col-md-2">
-    <img src="<?php echo $csv[$a]["images"];?>" class="img-responsive"></div>
+    <div class="col-xs-5 col-sm-3 col-md-2"></div>
     <div class="col-xs-7 col-sm-9 col-md-10">
       <h3><?php echo($a+1);?>. <?php echo $csv[$a]['titulo'];?></h3>
       <h5>Referencia: <?php echo $csv[$a]['apa'];?> </h5>
       <p>Abstract: <?php echo $csv[$a]['texto'];?></p>
+      <img src="<?php echo $csv[$a]["images"];?>" class="img-responsive">
       <h5>Palabras clave: <small><?php echo $csv[$a]['tags'];?> </h5>
       <h5>Link: <a href="<?php echo $csv[$a]['vinculo'];?>"><?php echo $csv[$a]['vinculo'];?></a></small></h5>
     </div>
